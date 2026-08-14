@@ -71,7 +71,7 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(31, 60, 61, 0.6), rgba(31, 60, 61, 0.8)), url('cucina chiesa.jpg') center/cover;
+            background: linear-gradient(rgba(31, 60, 61, 0.6), rgba(31, 60, 61, 0.8)), url('IMG_4683_2.jpg') center/cover;
             color: white;
             text-align: center;
             padding: 120px 20px;
@@ -148,6 +148,38 @@
         
         .card p:last-child {
             margin-bottom: 0;
+        }
+
+        /* Stili per le card con banner immagine sul titolo */
+        .card-banner {
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .card-header-bg {
+            padding: 50px 40px;
+            color: white;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+        }
+
+        .card-header-bg h3 {
+            color: white;
+            margin-bottom: 0;
+        }
+
+        .card-content {
+            padding: 40px;
+        }
+
+        .card-inverno-header {
+            background: linear-gradient(rgba(31, 60, 61, 0.5), rgba(31, 60, 61, 0.7)), url('neve.jpg') center/cover;
+        }
+
+        .card-estate-header {
+            background: linear-gradient(rgba(31, 60, 61, 0.5), rgba(31, 60, 61, 0.7)), url('lago.jpg') center/cover;
         }
 
         /* Galleria Immagini */
@@ -318,15 +350,15 @@
         </div>
 
         <div class="gallery-grid">
-            <img src="cucina-chiesa.jpg" alt="Cucina attrezzata e zona pranzo con vista">
-            <img src="cucian-chiesa.jpg" alt="Dettaglio mobili cucina e piano a induzione">
-            <img src="cucina-chiesa-2.jpg" alt="Ampia sala da pranzo e finestre luminose">
-            <img src="soggiorno-chiesa.jpg" alt="Soggiorno con stufa e TV">
-            <img src="soggiorno-chiesa2.jpg" alt="Soggiorno con divano letto matrimoniale e poltrona">
-            <img src="camera-chiesa-matr.jpg" alt="Camera da letto matrimoniale">
-            <img src="camera-catello-chiesa.jpg" alt="Camera con letto matrimoniale e letto a castello">
-            <img src="bagno-chiesa.jpg" alt="Bagno con servizi e finestra">
-            <img src="bagno-chiesa-2.jpg" alt="Bagno con doccia e lavatrice">
+            <img src="IMG_4683.jpg" alt="Cucina attrezzata e zona pranzo con vista">
+            <img src="IMG_4687.jpg" alt="Dettaglio mobili cucina e piano a induzione">
+            <img src="IMG_4682.jpg" alt="Ampia sala da pranzo e finestre luminose">
+            <img src="IMG_4680.jpg" alt="Soggiorno con stufa e TV">
+            <img src="IMG_4681.jpg" alt="Soggiorno con divano letto matrimoniale e poltrona">
+            <img src="IMG_4677.jpg" alt="Camera con letto matrimoniale e letto a castello">
+            <img src="IMG_4669.jpg" alt="Camera matrimoniale principale">
+            <img src="IMG_4672.jpg" alt="Bagno con servizi e finestra">
+            <img src="IMG_4673.jpg" alt="Bagno con doccia e lavatrice">
         </div>
     </section>
 
@@ -344,7 +376,7 @@
                 <div class="icon">🍳</div>
                 <div class="grid-text">
                     <h4>Cucina Full Optional</h4>
-                    <p>Induzione, forno ventilato, microonde, frigo e freezer spaziosi.</p>
+                    <p>Induzione, forno ventilato, microonde, frigorifero e freezer spaziosi.</p>
                 </div>
             </div>
             <div class="grid-item">
@@ -372,25 +404,33 @@
                 <div class="icon">🌡️</div>
                 <div class="grid-text">
                     <h4>Comfort Totale</h4>
-                    <p>Riscaldamento efficiente per le giornate più fredde e TV a schermo piatto.</p>
+                    <p>Riscaldamento con nuovissime stufe a pellet per le giornate più fredde e TV a schermo piatto.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="inverno">
-        <h3>Vivi l'Inverno e lo Sci in Valmalenco ❄️</h3>
-        <div class="card">
-            <p>Se ami la neve, la Valmalenco è il tuo paradiso ideale! Casa Palù si trova in una posizione strategica per godersi appieno il celebre comprensorio sciistico: chilometri di piste perfettamente innevate e <strong>tutte completamente collegate tra loro</strong> 🎿, che ti permettono di sciare senza sosta godendo di panorami unici.</p>
-            <p>Un grande punto di forza delle piste è la loro fantastica <strong>esposizione al sole</strong> ☀️, che garantisce giornate sulla neve luminose e calde dall'alba al tramonto. Che tu sia un esperto o un principiante, troverai strutture d'eccellenza e scuole sci dedicate con maestri qualificati pronti a farti <strong>imparare a sciare</strong> in totale sicurezza e divertimento ⛷️.</p>
-            <p>Per gli amanti dello sport e dell'adrenalina, il comprensorio offre anche un favoloso <strong>Snow Park</strong> 🏂 attrezzato per evoluzioni e freestyle. E per completare l'esperienza dello sci all'insegna del buon cibo e del relax, potrai fermarti nei <strong>numerosi rifugi presenti direttamente sulle piste</strong> 🍲, dove assaporare i piatti tipici valtellinesi circondati da una cornice alpina mozzafiato.</p>
+        <div class="card card-banner">
+            <div class="card-header-bg card-inverno-header">
+                <h3>Vivi l'Inverno e lo Sci in Valmalenco ❄️</h3>
+            </div>
+            <div class="card-content">
+                <p>Se ami la neve, la Valmalenco è il tuo paradiso ideale! Casa Palù si trova in una posizione strategica per godersi appieno il celebre comprensorio sciistico: chilometri di piste perfettamente innevate e <strong>tutte completamente collegate tra loro</strong> 🎿, che ti permettono di sciare senza sosta godendo di panorami unici.</p>
+                <p>Un grande punto di forza delle piste è la loro fantastica <strong>esposizione al sole</strong> ☀️, che garantisce giornate sulla neve luminose e calde dall'alba al tramonto. Che tu sia un esperto o un principiante, troverai strutture d'eccellenza e scuole sci dedicate con maestri qualificati pronti a farti <strong>imparare a sciare</strong> in totale sicurezza e divertimento ⛷️.</p>
+                <p>Per gli amanti dello sport e dell'adrenalina, il comprensorio offre anche un favoloso <strong>Snow Park</strong> 🏂 attrezzato per evoluzioni e freestyle. E per completare l'esperienza dello sci all'insegna del buon cibo e del relax, potrai fermarti nei <strong>numerosi rifugi presenti direttamente sulle piste</strong> 🍲, dove assaporare i piatti tipici valtellinesi circondati da una cornice alpina mozzafiato.</p>
+            </div>
         </div>
     </section>
 
     <section id="estate">
-        <h3>Vivi l'Estate in Valmalenco ☀️</h3>
-        <div class="card">
-            <p>La montagna non è magica solo in inverno! Durante la bella stagione, <strong>Casa Palù</strong> si trasforma nel punto di partenza strategico per vivere la natura incontaminata delle Alpi a 360 gradi.</p>
+        <div class="card card-banner">
+            <div class="card-header-bg card-estate-header">
+                <h3>Vivi l'Estate in Valmalenco ☀️</h3>
+            </div>
+            <div class="card-content">
+                <p>La montagna non è magica solo in inverno! Durante la bella stagione, <strong>Casa Palù</strong> si trasforma nel punto di partenza strategico per vivere la natura incontaminata delle Alpi a 360 gradi.</p>
+            </div>
         </div>
         <div class="grid-list">
             <div class="grid-item">
@@ -459,41 +499,42 @@
         <div class="booking-form">
             <p style="text-align: center; margin-bottom: 30px; font-size: 1.1rem;">Compila il form per richiedere la disponibilità. Ti risponderemo in tempi brevissimi con la nostra <strong>migliore offerta garantita</strong>, senza commissioni di agenzia.</p>
             
-            <form id="contactForm" onsubmit="submitForm(event)">
+            <!-- Modulo collegato a Formspree con i relativi attributi name -->
+            <form action="https://formspree.io/f/xqpzljqv" method="POST">
                 <div class="form-group">
                     <label for="nome">Nome e Cognome *</label>
-                    <input type="text" id="nome" placeholder="Es. Mario Rossi" required>
+                    <input type="text" id="nome" name="nome" placeholder="Es. Mario Rossi" required>
                 </div>
                 
                 <div class="form-group">
                     <label for="email">Email *</label>
-                    <input type="email" id="email" placeholder="mario.rossi@email.com" required>
+                    <input type="email" id="email" name="email" placeholder="mario.rossi@email.com" required>
                 </div>
                 
                 <div class="form-group">
                     <label for="telefono">Telefono (Opzionale, per risposta più rapida)</label>
-                    <input type="tel" id="telefono" placeholder="+39 333 1234567">
+                    <input type="tel" id="telefono" name="telefono" placeholder="+39 333 1234567">
                 </div>
                 
                 <div style="display: flex; gap: 20px; flex-wrap: wrap;">
                     <div class="form-group" style="flex: 1; min-width: 200px;">
                         <label for="checkin">Data di Arrivo *</label>
-                        <input type="date" id="checkin" required>
+                        <input type="date" id="checkin" name="checkin" required>
                     </div>
                     <div class="form-group" style="flex: 1; min-width: 200px;">
                         <label for="checkout">Data di Partenza *</label>
-                        <input type="date" id="checkout" required>
+                        <input type="date" id="checkout" name="checkout" required>
                     </div>
                 </div>
                 
                 <div class="form-group">
                     <label for="ospiti">Numero Totale di Ospiti *</label>
-                    <input type="number" id="ospiti" min="1" max="8" value="2" required>
+                    <input type="number" id="ospiti" name="ospiti" min="1" max="8" value="2" required>
                 </div>
                 
                 <div class="form-group">
                     <label for="messaggio">Hai richieste particolari? (Es. animali, orari di arrivo...)</label>
-                    <textarea id="messaggio" rows="5" placeholder="Scrivi qui il tuo messaggio..."></textarea>
+                    <textarea id="messaggio" name="messaggio" rows="5" placeholder="Scrivi qui il tuo messaggio..."></textarea>
                 </div>
                 
                 <button type="submit" class="btn" style="width: 100%; font-size: 1.2rem; padding: 18px;">Invia Richiesta di Prenotazione ✉️</button>
@@ -509,12 +550,5 @@
         <p style="font-size: 0.8rem; margin-top: 20px; opacity: 0.7;">© 2026 Casa Palù - Tutti i diritti riservati.</p>
     </footer>
 
-    <script>
-        function submitForm(event) {
-            event.preventDefault();
-            alert("✅ Grazie! La tua richiesta per Casa Palù è stata inviata con successo. Ti ricontatteremo al più presto sulla tua email per confermare la disponibilità.");
-            document.getElementById("contactForm").reset();
-        }
-    </script>
 </body>
 </html>
